@@ -15,6 +15,43 @@
             list-style: none;
         }
 
+        img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        h1{
+            margin-left: 5px;
+            margin-right: 10px;
+            color: #fff;
+        }
+
+        h2{
+            text-align:center;
+            color: #fff;
+        }
+
+		h3{
+            text-align:center;
+            color: #fff;
+        }
+
+
+        h5 {
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align:center;
+            color: #fff;
+        }
+
         .header {
             overflow: hidden;
             padding: 20px 10px;
@@ -50,53 +87,15 @@
             float: right;
             margin-right: 20px;
         }
-
-        @media screen and (max-width: 580px) {
-            .header a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-            .header-right {
-                float: left;
-                margin-top: 20px;
-                margin-left: 20px;
-            }
-        }
-        
-        h1{
-            margin-left: 5px;
-            margin-right: 10px;
-        }
-
-        h2{
-            text-align:center;
-        }
-
-		h3{
-            text-align:center;
-        }
-
-        p{
-            font-size: 15px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            text-align:center;
-        }
                 
         .menu div {
             max-width: 100%;
             position: inherit;
             padding: 1%;
-            height: 500px;
+            height: auto;
             box-sizing: border-box;
             margin-bottom: 100px;
-
-        }
-
-        h5 {
-            text-align: center;
-            padding: 20px;
+            overflow: auto;
         }
 
         .menu p {
@@ -106,22 +105,27 @@
         .left-col, .right-col {
             width: 33.3%;
             float: left;
+            text-align: center;
         }
 
         .center-col {
             width: 33.3%;
             float: left;
+            text-align: center;
         }
 
         .social-media div {
+            /* border: #eb2f06 solid; */
             max-width: 100%;
             padding: 1%;
-            height: 500px;
+            height: auto;
+            position: inherit;
             box-sizing: border-box;
-            /* margin-bottom: 100px; */
+            overflow: auto;
         }
 
         .section-title {
+            clear: both;
             font-size: 28px;
             padding-top: 40px;
             padding-bottom: 15px;
@@ -131,11 +135,14 @@
         .instagram, .twitter {
             width: 33.3%;
             float: left;
+            text-align: center;
         }
 
         .facebook {
             width: 33.3%;
             float: left;
+            text-align: center;
+
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -153,7 +160,7 @@
         }
 
         footer .content{
-            max-width: 1350px;
+            max-width: 100%;
             margin: auto;
             padding: 20px;
             display: flex;
@@ -185,9 +192,9 @@
             margin: 24px 0 5px 0;
         }
 
-        footer .content .lower i{
+        /* footer .content .lower i{
             padding-right: 16px;
-        }
+        } */
 
         footer a{
         transition: all 0.3s ease;
@@ -213,6 +220,21 @@
         } */
 
         @media screen and (max-width:560px){
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .header-right {
+                float: left;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .right-col, .center-col, .left-col, .instagram, .facebook, .twitter {
+                float: none;
+                margin: 0;
+                width: 100%;
+            }
             footer{
                 position: relative;
             }
@@ -271,45 +293,67 @@
     </script>
 
     <div class="menu">
-        <h3 class="section-title">Our Best-sellers</h3>
+        <h3 class="section-title">OUR BEST SELLERS</h3>
         <div class="left-col"> 
             <h2>Burgers</h2>
             <h5>Meat Lover Burger</h5>
             <img src="https://i.ibb.co/Npty05k/beef-burg-png.png" alt="beef-burg-png" border="0">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
             <h5>Wild-caught Chicken Burger</h5>
             <img src="https://i.ibb.co/0VJkjFZ/png-chick-burg.png" alt="png-chick-burg" border="0">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
         </div>
         <div class="center-col">
             <h2>Sides</h2>
             <h5>Animal-style fries</h5>
             <img src="https://i.ibb.co/DDV6qnB/cheese-fries-png.png" alt="cheese-fries-png" border="0">
-            <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p> -->
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
             <h5>Onion rings</h5>
             <img src="https://i.ibb.co/mq9r2tD/ive-seen-too-many-onion-rings.png" alt="ive-seen-too-many-onion-rings" border="0">
-            <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p> -->
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
         </div>
         <div class="right-col">
             <h2>Sweet</h2>
             <h5>Molten Lava cake</h5>
             <a href="https://ibb.co/rskscfj"><img src="https://i.ibb.co/FV6V0qr/image-removebg-preview-1.png" alt="image-removebg-preview-1" border="0"></a>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
             <h5>Animal-style Banana split</h5>
             <a href="https://ibb.co/gPRnb1s"><img src="https://i.ibb.co/TbgCDXz/banana-plsit.png" alt="banana-split" border="0"></a>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
         </div>
     </div>
 
     <div class="social-media">
-        <h3 class="section-title">Our Social Media</h3>
+        <h3 class="section-title">FOLLOW US</h3>
         <div class="instagram">
+            <div class="socmed-img">
             <img src="https://www.teralogistics.com/wp-content/uploads/2020/12/default.png">
-            <!-- <a href="https://wwww.instagram.com"><img src="https://i.ibb.co/RCCbtLQ/image.png" alt="image" border="0" height="315px" width="420px"></a> -->
+                <div class="overlay">
+                    <div class=text>Follow us on Instagram</div>
+                </div>
+            </div>
         </div>
         <div class="facebook">
+            <div class="socmed-img">
             <img src="https://www.teralogistics.com/wp-content/uploads/2020/12/default.png">
+                <div class="overlay">
+                    <div class=text>Follow us on Instagram</div>
+                </div>
+            </div>
         </div>
         <div class="twitter">
+            <div class="socmed-img">
             <img src="https://www.teralogistics.com/wp-content/uploads/2020/12/default.png">
+                <div class="overlay">
+                    <div class=text>Follow us on Instagram</div>
+                </div>
+            </div>
         </div>
     </div>
 
