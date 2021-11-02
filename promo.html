@@ -100,26 +100,30 @@
         }
 
         h6 {
-            text-align: center;
+            text-align: left;
             color: white;
             font-size: 18px;
             margin-top: 10px;
             margin-bottom: 5px;
         }
 
-        p{
+        p {
             font-size: 15px;
-            margin-top: 15px;
+            margin-top: 10px;
             margin-bottom: 15px;
-<<<<<<< HEAD
-            text-align:left;
-=======
             text-align:center;
 	        color: white;
->>>>>>> d198ab11cb3c9dce2164ccd63521d6268f44de7a
+        }
+
+        .prombanner {
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            text-align:left;
+	        color: white;
         }
                 
-        /* .menu div {
+        .menu div {
             max-width: 100%;
             position: inherit;
             padding: 1%;
@@ -148,9 +152,8 @@
             padding: 1%;
             height: 500px;
             box-sizing: border-box;
-            /* margin-bottom: 100px; */
-        /* }
-
+        }
+        
         .section-title {
             font-size: 28px;
             padding-top: 40px;
@@ -166,7 +169,7 @@
         .facebook {
             width: 33.3%;
             float: left;
-        } */
+        }
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
         *{
@@ -215,10 +218,6 @@
             margin: 24px 0 5px 0;
         }
 
-        footer .content .lower i{
-            padding-right: 16px;
-        }
-
         footer a{
         transition: all 0.3s ease;
         }
@@ -227,7 +226,7 @@
         color: #eb2f06;
         }
 
-        /* @media (max-width:1100px) {
+        @media (max-width:1100px) {
         footer .content .middle{
             padding-left: 50px;
             }
@@ -237,10 +236,10 @@
             footer .content .box{
                 width: 50%;
             }
-            .content .right{
+            .content .right {
                 margin-top: 40px;
             }
-        } */
+        }
 
         @media screen and (max-width:560px){
             footer{
@@ -251,22 +250,22 @@
                 width: 100%;
                 margin-top: 30px;
             }
-            
-            footer .content .middle{
-                padding-left: 0;
-            }
         }
 
-        /* .responsive {
-        width: 100%;
-        height: auto;
-        } */
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
 
         .promo {
             text-align: center;
             margin-bottom: 30px;
             font-size: 12px;
             line-height: 1.8;
+        }
+
+        .ourpromo {
+            padding: 20px 10px;
         }
 
     </style>
@@ -282,32 +281,30 @@
         </div>
     </div>
 
-
- 
-
-
     <h4>Our Promo Offers</h4>
-    <div class="promo">
-        <a href="https://ibb.co/z4j4Lgk"><img src="https://i.ibb.co/S3W31gL/banner-hci-web-brger-hq-01.jpg" alt="banner-hci-web-brger-hq-01" border="0"></a>
-        <h6>November Beef BRGER Promo</h6>
-        <p>Get one burger, fries, drink and cookies for only Rp. 60,000. <br>
-        Valid only until 30 November 2021</p>
+    <div class="ourpromo">
+        <div class="promo">
+            <a href="https://ibb.co/z4j4Lgk"><img src="https://i.ibb.co/S3W31gL/banner-hci-web-brger-hq-01.jpg" alt="banner-hci-web-brger-hq-01" border="0"></a>
+            <h6>November Beef BRGER Promo</h6>
+            <p class="prombanner">Get one burger, fries, drink and cookies for only Rp. 60,000. <br>
+            Valid only until 30 November 2021</p>
+        </div>
+
+        <div class="promo"
+            <a href="https://ibb.co/YdwFK52"><img src="https://i.ibb.co/t2FTN0B/banner-hci-web-brger-hq-02.jpg" alt="banner-hci-web-brger-hq-02" border="0"></a>
+            <h6>Summer Saturday</h6>
+            <p class="prombanner">Buy 1 soft drink get another one free! <br>
+            Valid all year long, ONLY ON SATURDAYS</p>
+        </div>
+
+        <div class="promo">
+            <a href="https://ibb.co/0tZTxQ5"><img src="https://i.ibb.co/cLt0jxq/banner-hci-web-brger-hq-03.jpg" alt="banner-hci-web-brger-hq-03" border="0"></a>
+            <h6>I Scream for Ice cream</h6>
+            <p class="prombanner">Scream to get one free in-house made soft serve (Vanilla or Strawberry)<br>
+            Available on 10 October 2021 to 10 November 2021</p>
+        </div>
     </div>
 
-    <div class="promo">
-        <a href="https://ibb.co/0tZTxQ5"><img src="https://i.ibb.co/cLt0jxq/banner-hci-web-brger-hq-03.jpg" alt="banner-hci-web-brger-hq-03" border="0"></a>
-        <h6>Summer Saturday</h6>
-        <p>Buy 1 soft drink get another one free! <br>
-        Valid all year long, ONLY ON SATURDAYS</p>
-    </div>
-
-    <div class="promo">
-        <a href="https://ibb.co/YdwFK52"><img src="https://i.ibb.co/t2FTN0B/banner-hci-web-brger-hq-02.jpg" alt="banner-hci-web-brger-hq-02" border="0"></a>
-        <h6>I Scream for Ice cream</h6>
-        <p>Scream to get one free in-house made soft serve (Vanilla or Strawberry)<br>
-        Available on 10 October 2021 to 10 November 2021</p>
-    </div>
-   
     <footer>
         <div class="content">
             <div class="left box">
@@ -317,21 +314,17 @@
               </div>
               <div class="lower">
                 <div class="topic">Contact us</div>
-                <div class="phone">
-                  <a href="#"><i class="fas fa-phone-volume"></i>+62XXXXXXXX</a>
-                </div>
-                <div class="email">
-                  <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
-                </div>
+                  <a href="#">+62 XXX XXXXXXX</a><br>
+                  <a href="#">brgers@gmail.com</a>
               </div>
             </div>
             <div class="right box">
                 <div class="topic">Our Locations</div>
                 <div><a href="#">Sudirman, Jakarta</a></div>
-                <div><a href="#">Location 1</a></div>
-                <div><a href="#">Location 2</a></div>
-                <div><a href="#">Location 3</a></div>
-                <div><a href="#">Location 4</a></div>
+                <div><a href="#">Muara Karang, Jakarta</a></div>
+                <div><a href="#">Ancol, Jakarta</a></div>
+                <div><a href="#">Serpong, Tangerang Selatan</a></div>
+                <div><a href="#">Pluit, Jakarta</a></div>
             </div>
           </div>
     </footer>
