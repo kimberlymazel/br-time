@@ -6,6 +6,8 @@
     <title>BRGERS</title>
     
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+        
         body {
             margin: 0;
             background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgb(0, 0, 0.5)) , url('https://wallpapercave.com/wp/wp4056285.jpg');
@@ -39,9 +41,11 @@
 
 
         h5 {
+            font-family: 'Homemade Apple', cursive;
             text-align: center;
             padding: 20px;
-            color: #fff;
+            color:#eb2f06;
+            font-size: 170%;
         }
 
         p {
@@ -94,7 +98,6 @@
             padding: 1%;
             height: auto;
             box-sizing: border-box;
-            margin-bottom: 100px;
             overflow: auto;
         }
 
@@ -115,11 +118,9 @@
         }
 
         .social-media div {
-            /* border: #eb2f06 solid; */
             max-width: 100%;
             padding: 1%;
             height: auto;
-            position: inherit;
             box-sizing: border-box;
             overflow: auto;
         }
@@ -136,13 +137,61 @@
             width: 33.3%;
             float: left;
             text-align: center;
+            position: relative;
+
         }
 
         .facebook {
             width: 33.3%;
             float: left;
             text-align: center;
+            position: relative;
 
+        }
+
+        .socmed-img {
+            display: block;
+            width: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+            bottom: 0%;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+
+        .overlay > * {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+        }
+
+        .overlay:hover {
+            opacity: 1;
+            
+        }
+
+        .overlay:hover > * {
+            transform: translateY(0px);
+            transition: all 0.3s ease;
+            color: #eb2f06;
+            
+        }
+
+        .socmed-desc a {
+            font-size: 1.25em;
+            margin-top: 0.25em;
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -192,9 +241,9 @@
             margin: 24px 0 5px 0;
         }
 
-        /* footer .content .lower i{
+        footer .content .lower i{
             padding-right: 16px;
-        } */
+        }
 
         footer a{
         transition: all 0.3s ease;
@@ -203,21 +252,6 @@
         footer a:hover{
         color: #eb2f06;
         }
-
-        /* @media (max-width:1100px) {
-        footer .content .middle{
-            padding-left: 50px;
-            }
-        }
-
-        @media (max-width:950px){
-            footer .content .box{
-                width: 50%;
-            }
-            .content .right{
-                margin-top: 40px;
-            }
-        } */
 
         @media screen and (max-width:560px){
             .header a {
@@ -292,66 +326,71 @@
     window.onload=changebanner;
     </script>
 
+
+
     <div class="menu">
         <h3 class="section-title">OUR BEST SELLERS</h3>
         <div class="left-col"> 
-            <h2>Burgers</h2>
+            <h2>BRGERS</h2>
             <h5>Meat Lover Burger</h5>
-            <img src="https://i.ibb.co/Npty05k/beef-burg-png.png" alt="beef-burg-png" border="0">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
-            <h5>Wild-caught Chicken Burger</h5>
-            <img src="https://i.ibb.co/0VJkjFZ/png-chick-burg.png" alt="png-chick-burg" border="0">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
+            <img src="https://i.ibb.co/Npty05k/beef-burg-png.png" alt="beef burger" border="0">
+            <p>Patty made from the laziest black cattle on the island of Kyushu. The flavour of the fat is exquisite, with a buttery, tender
+                texture that dissolves in one's mouth. Paired with dijon mustard, pickles brined in Champagne Ardenne vinegar and
+                the freshest organic produce - BRGER's finest creation.
+            </p>
+            <h5>Free-range Chicken Burger</h5>
+            <img src="https://i.ibb.co/0VJkjFZ/png-chick-burg.png" alt="chicken burger" border="0">
+            <p>A juicy poultry patty that's pakced with flavours thanks to Greek yoghurt dressing, Parmesan cheese, five spice rub and fresh parsley, on a freshly baked bun. 
+                Grilled a few minutes on a hot skillet that makes them golden and crisp on the outside, yet tender and juicy inside.</p>
         </div>
         <div class="center-col">
-            <h2>Sides</h2>
+            <h2>SIDES</h2>
             <h5>Animal-style fries</h5>
-            <img src="https://i.ibb.co/DDV6qnB/cheese-fries-png.png" alt="cheese-fries-png" border="0">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
+            <a href="https://ibb.co/SfqZwWt"><img src="https://i.ibb.co/kmYP2k4/cheesy-fries.png" alt="cheesy-fries" border="0"></a>
+            <p> Fresh, hand-cut, French-imported Russet potatoes prepared in 100% sunflower oil, dressed in 100-day aged cheddar and slices of Wagyu beef. </p>
             <h5>Onion rings</h5>
-            <img src="https://i.ibb.co/mq9r2tD/ive-seen-too-many-onion-rings.png" alt="ive-seen-too-many-onion-rings" border="0">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
+            <a href="https://ibb.co/yWjLwr6"><img src="https://i.ibb.co/J5JXf9v/onion-rings.png" alt="onion-rings" border="0"></a>
+            <p>Buttermilk onion rings twice flash-fried to maintain sweetness of onion and its cripsness, tossed in a secret blend of spice. Wonderfully paired with
+                any choice of BRGERs. </p>
         </div>
         <div class="right-col">
-            <h2>Sweet</h2>
+            <h2>DESSERT</h2>
             <h5>Molten Lava cake</h5>
-            <a href="https://ibb.co/rskscfj"><img src="https://i.ibb.co/FV6V0qr/image-removebg-preview-1.png" alt="image-removebg-preview-1" border="0"></a>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
+            <a href="https://ibb.co/rskscfj"><img src="https://i.ibb.co/FV6V0qr/image-removebg-preview-1.png" alt="molten lava cake" border="0"></a>
+            <p>Made with the highest quality chocolate from the Venezuelan region of Chuano, the official supplier to the Kings Louis XVIII, 
+                Charles X and Louis-Philippe. The ooey-gooey center is whipped and folded by hand and is infused with vanilla pods and Italian truffle oil.
+            </p>
             <h5>Animal-style Banana split</h5>
-            <a href="https://ibb.co/gPRnb1s"><img src="https://i.ibb.co/TbgCDXz/banana-plsit.png" alt="banana-split" border="0"></a>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
+            <a href="https://ibb.co/VpxTkT6"><img src="https://i.ibb.co/cXwQsQq/banana-split.png" alt="banana-split" border="0"></a>
+            <p>Caramelized banana splits with the chocolate drizzle and three scoops of the finest gelato; Gelato alla Fragola (strawberry), 
+                French vanilla bean, and chocolate with Venezuelan cacao nibs. Perfect encore to our classic beef BRGER. 
+            </p>
         </div>
     </div>
-
+    
     <div class="social-media">
         <h3 class="section-title">FOLLOW US</h3>
         <div class="instagram">
             <div class="socmed-img">
-            <img src="https://www.teralogistics.com/wp-content/uploads/2020/12/default.png">
+                <img src="https://i.ibb.co/QQGXzMP/IMG-8907.jpg" alt="instagram post" border="0">
                 <div class="overlay">
-                    <div class=text>Follow us on Instagram</div>
+                    <a class ="socmed-desc" href="https://wwww.instagram.com"> @brger on Instagram for featured posts</a>
                 </div>
             </div>
         </div>
         <div class="facebook">
             <div class="socmed-img">
-            <img src="https://www.teralogistics.com/wp-content/uploads/2020/12/default.png">
+                <img src="https://i.ibb.co/HDVwF8C/IMG-8906.jpg" alt="facebook post" border="0">
                 <div class="overlay">
-                    <div class=text>Follow us on Instagram</div>
+                    <a class ="socmed-desc" href="https://www.facebook.com"> BRGER on Facebook</a>
                 </div>
             </div>
         </div>
         <div class="twitter">
             <div class="socmed-img">
-            <img src="https://www.teralogistics.com/wp-content/uploads/2020/12/default.png">
+                <img src="https://i.ibb.co/1nc7nX7/IMG-8905.jpg" alt="twitter post" border="0">
                 <div class="overlay">
-                    <div class=text>Follow us on Instagram</div>
+                    <a class ="socmed-desc" href="https://wwww.twitter.com"> @brger on Twitter for daily store updates</a>
                 </div>
             </div>
         </div>
@@ -377,10 +416,7 @@
             <div class="right box">
                 <div class="topic">Our Locations</div>
                 <div><a href="#">Sudirman, Jakarta</a></div>
-                <div><a href="#">Location 1</a></div>
-                <div><a href="#">Location 2</a></div>
-                <div><a href="#">Location 3</a></div>
-                <div><a href="#">Location 4</a></div>
+                <div><a href="#">SCBD, Jakarta</a></div>
             </div>
           </div>
     </footer>
