@@ -1,16 +1,13 @@
 # br-time
 This is Kimberly and Alysha's repository for the food website from HCI Lab.
 
-brgers.html - main page of the website
+brgers.html - main page of the website <br>
+about.html - about us page of the website <br>
+promo.html - promo offer page of the website <br>
 
-about.html - about us page of the website
+stylesheet.css - external stylesheet for about.html and promo.html <br>
+stylesheetmain.css - external stylesheet for brgers.html <br>
 
-promo.html - promo offer page of the website
-
-stylesheet.css - external stylesheet for about.html and promo.html
-
-stylesheetmain.css - external stylesheet for brgers.html
-
-Alysha Maulidina 2502005906
-Kimberly Mazel 2502022250
+Alysha Maulidina 2502005906 <br>
+Kimberly Mazel 2502022250 <br>
 L1BC
