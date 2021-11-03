@@ -4,256 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRGERS</title>
-    
-    <style>
-        body {
-            margin: 0;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgb(0, 0, 0.5)) , url('https://wallpapercave.com/wp/wp4056285.jpg');
-        }
-
-        li {
-            list-style: none;
-        }
-
-        .header {
-            overflow: hidden;
-            padding: 20px 10px;
-        }
-        
-        .header a {
-            float: left;
-            color: #fff;
-            text-align: center;
-            padding: 12px;
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 25px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .header a.logo {
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .header a:hover {
-            color: #eb2f06;
-        }
-
-        .header a.active {
-            background-color: #eb2f06;
-            color: white;
-        }
-
-        .header-right {
-            float: right;
-            margin-right: 20px;
-        }
-
-        @media screen and (max-width: 580px) {
-            .header a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-            .header-right {
-                float: left;
-                margin-top: 20px;
-                margin-left: 20px;
-            }
-        }
-        
-        h1{
-            margin-left: 5px;
-            margin-right: 10px;
-            color: white;
-        }
-
-        h2{
-            text-align:center;
-            color: white;
-        }
-
-		h3{
-            text-align:center;
-            color: white;
-        }
-
-        h4 {
-            text-align:center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size:30px;
-            color: white;
-        }
-
-        p{
-            font-size: 15px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            text-align:center;
-        }
-                
-        .menu div {
-            max-width: 100%;
-            position: inherit;
-            padding: 1%;
-            height: 500px;
-            box-sizing: border-box;
-            margin-bottom: 100px;
-
-        }
-
-        h5 {
-            text-align: center;
-            padding: 20px;
-            color: white;
-        }
-
-        .menu p {
-            padding: 20px;
-        }
-
-        .left-col, .right-col {
-            width: 33.3%;
-            float: left;
-        }
-
-        .center-col {
-            width: 33.3%;
-            float: left;
-        }
-
-        .social-media div {
-            max-width: 100%;
-            padding: 1%;
-            height: 500px;
-            box-sizing: border-box;
-            /* margin-bottom: 100px; */
-        }
-
-        .section-title {
-            font-size: 28px;
-            padding-top: 40px;
-            padding-bottom: 15px;
-            margin-bottom: 50px;
-        }
-
-        .instagram, .twitter {
-            width: 33.3%;
-            float: left;
-        }
-
-        .facebook {
-            width: 33.3%;
-            float: left;
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins',sans-serif;
-            text-decoration: none;
-        }
-
-        footer {
-            width: 100%;
-            clear: both;
-        }
-
-        footer .content{
-            max-width: 1350px;
-            margin: auto;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        footer .content p,a{
-            color: #fff;
-        }
-
-        footer .content .box{
-            width: 33.3%;
-            transition: all 0.4s ease;
-        }
-
-        footer .content .topic{
-            font-size: 22px;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 16px;
-        }
-
-        footer .content p{
-            text-align: justify;
-        }
-
-        footer .content .lower .topic{
-            margin: 24px 0 5px 0;
-        }
-
-        footer .content .lower i{
-            padding-right: 16px;
-        }
-
-        footer a{
-        transition: all 0.3s ease;
-        }
-
-        footer a:hover{
-        color: #eb2f06;
-        }
-
-        /* @media (max-width:1100px) {
-        footer .content .middle{
-            padding-left: 50px;
-            }
-        }
-
-        @media (max-width:950px){
-            footer .content .box{
-                width: 50%;
-            }
-            .content .right{
-                margin-top: 40px;
-            }
-        } */
-
-        @media screen and (max-width:560px){
-            footer{
-                position: relative;
-            }
-
-            footer .content .box{
-                width: 100%;
-                margin-top: 30px;
-            }
-            
-            footer .content .middle{
-                padding-left: 0;
-            }
-        }
-
-        .responsive {
-        width: 93%;
-        height: auto;
-        }
-
-    </style>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
     <div class="header">
         <a href="#" class="logo"><h1 style = "font-size:10vw color=white">BRGERS</h1></a>
         <div class="header-right">
-          <a href='#'>Home</a>
-          <a href="#">Promo</a>
-          <a class="active" href="#">About</a>
+          <a href='brgers.html'>Home</a>
+          <a href="promo.html">Promo</a>
+          <a class="active" href="about.html">About</a>
         </div>
     </div>
 
@@ -280,21 +40,17 @@
               </div>
               <div class="lower">
                 <div class="topic">Contact us</div>
-                <div class="phone">
-                  <a href="#"><i class="fas fa-phone-volume"></i>+62XXXXXXXX</a>
-                </div>
-                <div class="email">
-                  <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
-                </div>
+                  <a href="#">+62 XXX XXXXXXX</a><br>
+                  <a href="#">brgers@gmail.com</a>
               </div>
             </div>
             <div class="right box">
                 <div class="topic">Our Locations</div>
                 <div><a href="#">Sudirman, Jakarta</a></div>
-                <div><a href="#">Location 1</a></div>
-                <div><a href="#">Location 2</a></div>
-                <div><a href="#">Location 3</a></div>
-                <div><a href="#">Location 4</a></div>
+                <div><a href="#">Muara Karang, Jakarta</a></div>
+                <div><a href="#">Ancol, Jakarta</a></div>
+                <div><a href="#">Serpong, Tangerang Selatan</a></div>
+                <div><a href="#">Pluit, Jakarta</a></div>
             </div>
           </div>
     </footer>
